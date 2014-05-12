@@ -1,0 +1,6 @@
+#!/bin/bash
+
+hadoop jar weblog.jar com.test.hadoop.Weblog  warehouse/weblogs_parse.txt warehouse/output
+hadoop jar weblog.jar com.test.hadoop.WeblogPartition  warehouse/weblogs_parse.txt warehouse/output
+hadoop jar weblog.jar com.test.hadoop.WeblogIp  warehouse/weblogs_parse.txt warehouse/output
+
